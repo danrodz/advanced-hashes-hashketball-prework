@@ -160,6 +160,7 @@ def team_names
   hash.each do |team, statistics|
     team_names << hash[team][:team_name]
   end
+  team_names
 end
 
 
