@@ -123,6 +123,7 @@ def num_points_scored(player_name)
     hash[team][:players].each do |player, stats|
       if player == player_name
         return puts hash[team][:players][player][:points]
+      end
     end
   end
 end
