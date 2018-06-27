@@ -182,9 +182,9 @@ def player_stats(player_name)
   player_stats = nil
   hash = game_hash
   hash.each do |team, statistics|
-    hash[team].each do |stats, values|
-      hash[team][:players].each do |player, stat| 
-      jersey_numbers << hash[team][:players][player][:number]
+    hash[team][:players].each do |player, stats|
+      if player == player_name
+        player_stats = hash[team][:players][player]
       end
     end
   end
