@@ -200,6 +200,7 @@ def big_shoe_rebounds
       if hash[team][:players][player][:shoe] > shoe_size
         shoe_size = hash[team][:players][player][:shoe]
         rebounds = hash[team][:players][player][:rebounds]
+      end
     end
   end
   rebounds
