@@ -149,11 +149,8 @@ def team_colors(team_name)
   hash.each do |team, statistics|
     hash[team].each do |stats, values|
       if hash[team][stats] == team_name
-        
+        colors = hash[team][:colors] 
       end
-    end
-    if hash[team][statistics] == team_name
-      colors = hash[team][:colors] 
     end
   end
   colors
