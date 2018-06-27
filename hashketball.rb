@@ -164,14 +164,18 @@ def team_names
 end
 
 def player_numbers(team_name)
+  jersey_numbers = []
   hash = game_hash
   hash.each do |team, statistics|
     hash[team].each do |stats, values|
       if hash[team][stats] == team_name
-        return hash[team][:colors] 
+        hash[team][:players].each do |player, stat| 
+        jersey_numbers << hash[team][:players][player][:number]
+        end
       end
     end
   end
+  jersey_numbers
 end
 
 
