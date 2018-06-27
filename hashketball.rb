@@ -158,7 +158,7 @@ def team_names
   team_names = []
   hash = game_hash
   hash.each do |team, statistics|
-    hash[team][]
+    team_names << hash[team][:team_name]
   end
 end
 
