@@ -147,10 +147,8 @@ def team_colors(team_name)
   hash = game_hash
   colors = []
   hash.each do |team, statistics|
-    hash[team][:players].each do |player, stats|
-      if player == player_name
-        size = hash[team][:players][player][:shoe]
-      end
+    if team == team_name
+    
     end
   end
   colors
