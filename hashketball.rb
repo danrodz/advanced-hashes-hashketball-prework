@@ -118,19 +118,13 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  this_game_hash = game_hash
+  hash = game_hash
   score = 0
-  this_game_hash.each do |team, hashes|
-    this_game_hash[team].each do |keys, values|
-      if [keys] == :players
-        this_game_hash[team][keys].each do |player, stats|
-          if player == player_name
-            this_game_hash[team][keys][player].each do |ind_stat, value|
-              if ind_stat == :points
-                score = this_game_hash[team][keys][player][ind_stat]
-              end
-            end
-          end
+  hash.each do |team, values|
+    hash[team].each do |key, value|
+      hash[team][key].each do ||
+        if supplies == "BBQ"
+          array.push(key)
         end
       end
     end
