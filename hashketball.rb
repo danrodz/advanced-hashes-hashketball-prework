@@ -150,7 +150,6 @@ def team_colors(team_name)
       return hash[team][:colors] 
     end
   end
-  colors
 end
 
 
