@@ -136,7 +136,7 @@ def shoe_size(player_name)
   hash.each do |team, statistics|
     hash[team][:players].each do |player, stats|
       if player == player_name
-        score = hash[team][:players][player][:points]
+        size = hash[team][:players][player][:sh]
       end
     end
   end
