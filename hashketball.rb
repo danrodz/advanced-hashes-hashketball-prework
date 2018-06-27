@@ -143,7 +143,9 @@ def shoe_size(player_name)
   size
 end
 
-def team_colors
+def team_colors(team_name)
+  
+end
 
 
 
