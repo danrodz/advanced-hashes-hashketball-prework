@@ -180,7 +180,15 @@ end
 
 def player_stats(player_name)
   player_stats = nil
-    
+  hash = game_hash
+  hash.each do |team, statistics|
+    hash[team].each do |stats, values|
+      hash[team][:players].each do |player, stat| 
+      jersey_numbers << hash[team][:players][player][:number]
+      end
+    end
+  end
+  player_stats
 end
 
 
