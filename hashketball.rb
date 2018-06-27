@@ -164,7 +164,14 @@ def team_names
 end
 
 def player_numbers(team_name)
-  
+  hash = game_hash
+  hash.each do |team, statistics|
+    hash[team].each do |stats, values|
+      if hash[team][stats] == team_name
+        return hash[team][:colors] 
+      end
+    end
+  end
 end
 
 
